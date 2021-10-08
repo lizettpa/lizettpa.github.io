@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: rgba(25, 25, 25, 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+nav .menu{
+    list-style: none;
+    display: flex;
+    font-family: 'Space Mono';
+    margin: 1.5rem;
+    justify-content: flex-end;
+}
+nav .menu a{
+    color: #FDB404;
+    text-decoration: none;
+    padding: 1rem;
+}
+nav .menu a:hover{
+    background-color: #fdb6042c;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    justify-items: center;
+}
+main .photo{
+    width: 50%;
+    max-height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10rem 0 0 20rem;
+}
+.photo img{
+    width: 15rem;
+    height: 15rem;
+    border: 0.5rem solid #47453d;
+    border-bottom: 0.5rem solid #FDB404;
+    border-radius: 50%;
+}
+main .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2rem;
+}
+main .description h2{
+    color: antiquewhite;
+    text-transform: uppercase;
+}
+main .description h1{
+    color: #FDB404;
+    text-transform: uppercase;
+}
+main .description p{
+    color: antiquewhite;
+}
+main .description .buttons{
+    padding: 5rem;
+}
+main .description .buttons .aboutMe{
+    background-color: #FDB404;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    color: antiquewhite;
+}
+main .description .buttons .dm{
+    background-color: rgba(27, 27,27, 0.5);
+    border: .01em solid #FDB404;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    color: #FDB404;
+}
+main .description .buttons a{
+    color: #FDB404;
+    text-decoration: none;
+}
+main .description .buttons .dm:hover{
+    background-color: #FDB404;
+    transition: 0.5s;
+    color: antiquewhite;
+}
+

@@ -1,0 +1,436 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #111111;
+}
+.container{
+    width: 100vw;
+    height: 100wh;
+    display: flex;
+    flex-direction: column;
+}
+nav .menu{
+    list-style: none;
+    display: flex;
+    font-family: 'Space Mono';
+    margin: 1.5rem;
+    justify-content: flex-end;
+}
+nav .menu a{
+    color: #FDB404;
+    text-decoration: none;
+    padding: 1rem;
+}
+nav .menu a:hover{
+    background-color: #fdb6042c;
+    border-radius: 1rem;
+    transition: 0.3s;
+}
+/*Contenedor*/
+.container main{
+    width: 100vw;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+main .cv{
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    margin: 1.3rem;
+}
+main .cv .about{
+    padding: 1.3rem;
+    color: antiquewhite;
+    font-size: 3rem;
+}
+main .cv .me{
+    color: #FDB404;
+}
+main .backTitle{
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    -webkit-text-stroke: 0.03rem rgba(255,255,255,0.05);
+    color: transparent;
+    font-weight: 850;
+    position: absolute;
+}
+main .basicInfo{
+    width: 100vw;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+main .basicInfo picture{
+    width: 30vw;
+    max-height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+picture .Liz{
+    width: 15rem;
+    height: 15rem;
+    border: 0.7rem solid #222222;
+    border-right: 0.7rem solid black;
+    border-bottom: 0.7rem solid black;
+}
+.basicInfo .personalOne, .basicInfo .personalTwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    color: antiquewhite;
+    margin: 1.5rem;
+}
+.basicInfo li{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.basicInfo .icon{
+    width: 1.5rem;
+    background-color: #FDB404;
+    border-radius: 50%;
+}
+.basicInfo span{
+    padding: 0 1rem 0 0.5rem;    
+}
+.basicInfo a{   
+    color: antiquewhite;
+    text-decoration: none;
+}
+.basicInfo a:hover{
+    background-color: #fdb20421;
+    transition: 0.5s;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+main .download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 3rem;
+    background-color: #FDB404;
+    border-radius: 1rem;
+    margin: 0 0 0 27.5rem;
+}
+main .download a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 0.5rem;
+}
+main .download .iconDownload{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.line{
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+.line hr{
+    width: 50%;
+    border: 1px solid rgb(29, 29, 29);
+}
+.infoCV{
+    width: 100vw;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.education .edTitle{
+    text-align: center;
+    font-size: 2rem;
+    color: #FDB404;
+}
+.infoCV .education{
+    width: 50vw;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+}
+.infoCV .education .edList{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.infoCV .edList .titulation{
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    margin: 2rem 0 1rem 5rem;
+}
+.infoCV .edList .titulation .edIcon{
+    background-color: #FDB404;
+    border-radius: 50%;
+    width: 1.8rem;
+}
+.infoCV .edList .titulation .edSpan{
+    padding: 0 0 0 1rem;
+}
+.edList .edYearU{
+    font-size: 0.8rem;
+    margin: 5rem;       
+}
+.edList .edDescription{
+    font-size: 0.8rem;
+    margin: 0.3rem 0 0 5rem;
+    width: 60%;
+}
+
+.experience .exTitle{
+    text-align: center;
+    font-size: 2rem;
+    color: #FDB404;
+}
+.infoCV .experience{
+    width: 50vw;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    margin-bottom: 3rem;
+}
+.infoCV .experience .exList{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.infoCV .exList .titulation{
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    margin: 2rem 0 1rem 5rem;
+}
+.infoCV .exList .titulation .exIcon{
+    background-color: #FDB404;
+    border-radius: 50%;
+    width: 1.8rem;
+}
+.infoCV .exList .titulation .exSpan{
+    padding: 0 0 0 1rem;
+}
+.exList .exYearU{
+    font-size: 0.8rem;
+    margin: 5rem;       
+}
+.exList .exDescription{
+    font-size: 0.8rem;
+    margin: 0.3rem 0 0 5rem;
+    width: 60%;
+}
+.skills{
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lineOne{
+    width: 100vw;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+.lineOne hr{
+    width: 50%;
+    border: 1px solid rgb(29, 29, 29);
+}
+.skH2{
+    color: antiquewhite;
+    text-transform: uppercase;
+}
+.skills .sk-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    max-height: 100%;
+    padding: 4rem;
+}
+.sk-container .sk-HTML{
+    display: flex;
+    flex-direction: column;
+    max-width: 33.3%;
+    max-height: 100%;
+    position: relative;
+}
+.sk-HTML .sk-span{
+    color: antiquewhite;
+    width: 100vw;
+    height: 100%;
+    margin: 0 0 0 0.5rem;
+}
+.sk-HTML .sk-background{
+    background-color: rgb(40, 40, 40);
+    width: 80%;
+    height: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+}
+.sk-HTML .sk-progress{
+    background-color: #FDB404;
+    width: 15%;
+    height: 0.5rem;
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+}
+
+.sk-container .sk-english{
+    display: flex;
+    flex-direction: column;
+    max-width: 33.3%;
+    max-height: 100%;
+    position: relative;
+
+}
+.sk-english .sk-span{
+    color: antiquewhite;
+    width: 100vw;
+    height: 100%;
+    padding: 0 0 0 0.5rem;
+}
+.sk-english .sk-background{
+    background-color: rgb(40, 40, 40);
+    width: 80%;
+    height: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+}
+.sk-english .sk-progress{
+    background-color: #FDB404;
+    width: 70%;
+    height: 0.5rem;
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+}
+
+.sk-container .sk-css{
+    display: flex;
+    flex-direction: column;
+    max-width: 33.3%;
+    max-height: 100%;
+    position: relative;
+    
+}
+.sk-css .sk-span{
+    color: antiquewhite;
+    width: 100vw;
+    height: 100%;
+    padding: 0 0 0 0.5rem;
+}
+.sk-css .sk-background{
+    background-color: rgb(40, 40, 40);
+    width: 80%;
+    height: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+}
+.sk-css .sk-progress{
+    background-color: #FDB404;
+    width: 15%;
+    height: 0.5rem;
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+    
+}
+
+.sk-container .sk-redaction{
+    display: flex;
+    flex-direction: column;
+    max-width: 33.3%;
+    max-height: 100%;
+    position: relative;
+    
+}
+.sk-redaction .sk-span{
+    color: antiquewhite;
+    width: 100vw;
+    height: 100%;
+    padding: 0 0 0 0.5rem;
+}
+.sk-redaction .sk-background{
+    background-color: rgb(40, 40, 40);
+    width: 80%;
+    height: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+}
+.sk-redaction .sk-progress{
+    background-color: #FDB404;
+    width: 85%;
+    height: 0.5rem;
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+    
+}
+
+.sk-container .sk-italian{
+    display: flex;
+    flex-direction: column;
+    max-width: 33.3%;
+    max-height: 100%;
+    position: relative;
+    
+}
+.sk-italian .sk-span{
+    color: antiquewhite;
+    width: 100vw;
+    height: 100%;
+    padding: 0 0 0 0.5rem;
+}
+.sk-italian .sk-background{
+    background-color: rgb(40, 40, 40);
+    width: 80%;
+    height: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+}
+.sk-italian .sk-progress{
+    background-color: #FDB404;
+    width: 45%;
+    height: 0.5rem;
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+    
+}
+
+.sk-container .sk-excel{
+    display: flex;
+    flex-direction: column;
+    max-width: 33.3%;
+    max-height: 100%;
+    position: relative;
+}
+.sk-excel .sk-span{
+    color: antiquewhite;
+    width: 100vw;
+    height: 100%;
+    padding: 0 0 0 0.5rem;
+}
+.sk-excel .sk-background{
+    background-color: rgb(40, 40, 40);
+    width: 80%;
+    height: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+}
+.sk-excel .sk-progress{
+    background-color: #FDB404;
+    width: 45%;
+    height: 0.5rem;
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+    
+}
